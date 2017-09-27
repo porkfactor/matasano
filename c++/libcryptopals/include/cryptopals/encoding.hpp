@@ -13,6 +13,11 @@ namespace porkfactor
         std::string base64encode(std::vector<uint8_t> const &v);
         std::string base64encode(void const *data, size_t szData);
         std::vector<uint8_t> base64decode(std::string const &s);
+
+        std::string base32encode(std::vector<uint8_t> const &v);
+        std::string base32encode(void const *data, size_t szData);
+        std::vector<uint8_t> base32decode(std::string const &s);
+
         std::string base16encode(std::vector<uint8_t> const &v);
         std::string base16encode(void const *data, size_t szData);
         std::vector<uint8_t> base16decode(std::string const &s);
